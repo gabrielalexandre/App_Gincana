@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">IFCana</string>
+
+    <!--Tela de cadastro-->
+    <string name="cadastrar">Cadastrar Participante</string>
+    <string name="nome">Nome</string>
+    <string name="RA">RA</string>
+    <string name="curso">Curso</string>
+    <string name="turma">Turma</string>
+    <string name="equipe">Equipe</string>
+    <string name="bt">Enviar</string>
 </resources>
