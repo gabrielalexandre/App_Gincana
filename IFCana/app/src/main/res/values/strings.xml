@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">IFCana</string>
 
+    <!-- Error -->
+    <string name="error">Campo obrigatório</string>
+
     <!--Tela de cadastro-->
     <string name="cadastrar">Cadastrar Participante</string>
     <string name="nome">Nome</string>
@@ -9,4 +12,13 @@
     <string name="turma">Turma</string>
     <string name="equipe">Equipe</string>
     <string name="bt">Enviar</string>
+
+    <!--Tela de Opções -->
+    <string name="tema">IFCANA</string>
+    <string name="btcadastro">Cadastro</string>
+    <string name="btacompanhar">Acompanhar</string>
+
+    <!--Tela de Opções2 -->
+    <string name="participante">Área do participante</string>
+    <string name="pontuacao">Pontuação</string>
 </resources>

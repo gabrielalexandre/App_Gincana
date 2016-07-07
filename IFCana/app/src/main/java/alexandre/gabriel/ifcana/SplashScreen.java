@@ -19,7 +19,7 @@ public class SplashScreen extends ActionBarActivity {
             @Override
             public void run() {
                 //metodo para trocar de tela automaticamente após o tempo do SPLASH_TIME_OUT
-                Intent i = new Intent(SplashScreen.this, Cadastro.class);
+                Intent i = new Intent(SplashScreen.this, TelaOpcoes.class);
                 startActivity(i);
 
                 finish();

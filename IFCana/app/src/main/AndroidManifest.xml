@@ -15,7 +15,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".TelaOpcoes">
+
+        </activity>
+
+        <activity
             android:name=".Cadastro">
+
+        </activity>
+        <activity
+            android:name=".TelaOpcoes2">
 
         </activity>
     </application>
