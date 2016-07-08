@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class TelaOpcoes extends ActionBarActivity {
 
-    private Button cadastro;
+    private Button cadastro, acompanhar;
 
 
     @Override
@@ -29,6 +29,20 @@ public class TelaOpcoes extends ActionBarActivity {
 
             }
         });
+
+        acompanhar = (Button) findViewById(R.id.btacompanha);
+        acompanhar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent trocatela = new
+                Intent(TelaOpcoes.this, Prova1.class);
+                TelaOpcoes.this.startActivity(trocatela);
+                TelaOpcoes.this.finish();
+
+
+            }
+        });
+
 
 
 

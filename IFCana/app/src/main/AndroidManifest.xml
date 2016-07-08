@@ -27,6 +27,26 @@
             android:name=".TelaOpcoes2">
 
         </activity>
+        <activity
+            android:name=".Prova1">
+
+        </activity>
+        <activity
+            android:name=".Prova2">
+
+        </activity>
+        <activity
+            android:name=".Prova3">
+
+        </activity>
+        <activity
+            android:name=".Prova4">
+
+        </activity>
+        <activity
+            android:name=".Prova5">
+
+        </activity>
     </application>
 
 </manifest>

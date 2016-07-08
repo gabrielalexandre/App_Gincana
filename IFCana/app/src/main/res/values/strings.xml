@@ -21,4 +21,13 @@
     <!--Tela de Opções2 -->
     <string name="participante">Área do participante</string>
     <string name="pontuacao">Pontuação</string>
+
+    <!--Tela de provas-->
+    <string name="proxprova">Próxima prova</string>
+    <string name="temporestante">Tempo restante</string>
+    <string name="caboguerra">Cabo de guerra</string>
+    <string name="pichorra">Pichorra</string>
+    <string name="arremesso">Arremesso</string>
+    <string name="cestinha">Cestinha</string>
+    <string name="tempo">Tempo restante</string>
 </resources>
