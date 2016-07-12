@@ -30,4 +30,11 @@
     <string name="arremesso">Arremesso</string>
     <string name="cestinha">Cestinha</string>
     <string name="tempo">Tempo restante</string>
+
+    <!--Tela de pontuação-->
+    <string name="txtpontuacao">Pontuação</string>
+    <string name="time1">Time Vermelho</string>
+    <string name="time2">Time Verde</string>
+    <string name="time3">Time Amarelo</string>
+    <string name="time4">Time Azul</string>
 </resources>

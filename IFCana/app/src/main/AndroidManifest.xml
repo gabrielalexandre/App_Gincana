@@ -47,6 +47,10 @@
             android:name=".Prova5">
 
         </activity>
+        <activity
+            android:name=".Pontuacao">
+
+        </activity>
     </application>
 
 </manifest>
