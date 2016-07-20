@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class Cadastro extends AppCompatActivity{
 
     private Spinner spinnerEquipe;
     private EditText equipe;
+    private ImageView bt_voltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,18 @@ public class Cadastro extends AppCompatActivity{
 
         spinnerEquipe = (Spinner) findViewById(R.id.spinequipe);
         equipe = (EditText) findViewById(R.id.nomeEquipe);
+        bt_voltar = (ImageView) findViewById(R.id.btvoltar);
+
+        bt_voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent trocatela = new Intent(Cadastro.this, TelaOpcoes.class);
+                Cadastro.this.startActivity(trocatela);
+                Cadastro.this.finish();
+
+            }
+
+        });
         ArrayList<String> stringArrayList = new ArrayList<>();
         stringArrayList.add("Vermelha");
         stringArrayList.add("Azul");

@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 /**
  * Created by Gabriel on 08/07/2016.
@@ -13,6 +14,7 @@ import android.widget.Button;
 public class Prova3 extends AppCompatActivity {
 
     private Button proxima_prova3;
+    private ImageView bt_voltar;
 
 
     @Override
@@ -33,6 +35,18 @@ public class Prova3 extends AppCompatActivity {
             }
         });
 
+
+        bt_voltar = (ImageView) findViewById(R.id.btvoltar);
+        bt_voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent trocatela = new Intent(Prova3.this, Prova2.class);
+                Prova3.this.startActivity(trocatela);
+                Prova3.this.finish();
+
+            }
+
+        });
     }
     
 }

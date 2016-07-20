@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.io.InputStream;
 
@@ -14,6 +15,7 @@ import java.io.InputStream;
 public class Prova1 extends ActionBarActivity {
 
     private Button proxima_prova1;
+    private ImageView bt_voltar;
 
 
     @Override
@@ -34,6 +36,17 @@ public class Prova1 extends ActionBarActivity {
             }
         });
 
+        bt_voltar = (ImageView) findViewById(R.id.btvoltar);
+        bt_voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent trocatela = new Intent(Prova1.this, TelaOpcoes.class);
+                Prova1.this.startActivity(trocatela);
+                Prova1.this.finish();
+
+            }
+
+        });
     }
 
 }
