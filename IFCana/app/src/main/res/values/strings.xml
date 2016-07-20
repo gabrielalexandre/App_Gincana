@@ -5,12 +5,9 @@
     <string name="error">Campo obrigatório</string>
 
     <!--Tela de cadastro-->
-    <string name="cadastrar">Cadastrar Participante</string>
-    <string name="nome">Nome</string>
-    <string name="RA">RA</string>
-    <string name="curso">Curso</string>
-    <string name="turma">Turma</string>
-    <string name="equipe">Equipe</string>
+    <string name="cadastrar">Cadastrar Equipe</string>
+    <string name="nome">Nome da Equipe</string>
+    <string name="equipe">Cor da equipe</string>
     <string name="bt">Enviar</string>
 
     <!--Tela de Opções -->
@@ -26,6 +23,13 @@
     <string name="proxprova">Próxima prova</string>
     <string name="temporestante">Tempo restante</string>
     <string name="caboguerra">Cabo de guerra</string>
+    <string name="txtwar">Dividir os participantes em duas equipes, sempre buscando equilibrá-las em número, força e idade. Marcar o centro da corda com um lenço e no chão com um giz.
+Assim que feita a divisão, puxa-se a corda. A  equipe que conseguir puxar pelo menos um dos adversários para frente da linha centra é a vencedora.</string>
+    <string name="txtarremesso">Arremesso de argolas, faz 1 ponto quem conseguir encaixar o bambolê na referÊncial primeiro. Ganha quem tiver mais pontos.</string>
+    <string name="txtcesta">Jogam duas equipes e dois ajudantes. A brincadeira funciona como um jogo de basquete, mas só há uma cesta, que na verdade são duas pessoas, de braços dados e abertos. Quem fizer uma cesta, escolhe alguém da dupla para substituí-lo
+        na equipe e ele será a nova metade da cesta. A equipe que fizer mais cestas, vence a partida.</string>
+    <string name="txtpichorra">Uma bexiga é pendurada no alto e os representantes das equipes, depois de vendados e rodados, devem estourá-la com um pau, sendo
+        guiadas pelas respectivas equipes.</string>
     <string name="pichorra">Pichorra</string>
     <string name="arremesso">Arremesso</string>
     <string name="cestinha">Cestinha</string>

@@ -3,10 +3,11 @@ package alexandre.gabriel.ifcana;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class TelaOpcoes2 extends ActionBarActivity {
+public class TelaOpcoes2 extends AppCompatActivity {
 
     Button pontuacao;
 

@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -13,10 +15,10 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Cadastro extends ActionBarActivity{
+public class Cadastro extends AppCompatActivity{
 
     private Spinner spinnerEquipe;
-    private EditText nome, RA, curso, turma;
+    private EditText equipe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +26,7 @@ public class Cadastro extends ActionBarActivity{
         setContentView(R.layout.activity_cadastro);
 
         spinnerEquipe = (Spinner) findViewById(R.id.spinequipe);
-        nome = (EditText) findViewById(R.id.ednome);
-        RA = (EditText) findViewById(R.id.edRA);
-        curso = (EditText) findViewById(R.id.edcurso);
-        turma = (EditText) findViewById(R.id.edturma);
-
+        equipe = (EditText) findViewById(R.id.nomeEquipe);
         ArrayList<String> stringArrayList = new ArrayList<>();
         stringArrayList.add("Vermelha");
         stringArrayList.add("Azul");
@@ -52,33 +50,24 @@ public class Cadastro extends ActionBarActivity{
         });}
 
     public void enviar(View view){
-        String snome = nome.getText().toString();
-        String sRA = RA.getText().toString();
-        String sCurso = curso.getText().toString();
-        String sTurma = turma.getText().toString();
+        String snome = equipe.getText().toString();
 
         boolean validacao = true;
 
         if (snome == null || snome.equals("")){
             validacao = false;
-            nome.setError(getString(R.string.error));
-        }
-        if (sRA == null || sRA.equals("")){
-            validacao = false;
-            RA.setError(getString(R.string.error));
-        }
-        if (sCurso == null || sCurso.equals("")){
-            validacao = false;
-            curso.setError(getString(R.string.error));
-        }
-        if (sTurma == null || sTurma.equals("")){
-            validacao = false;
-            turma.setError(getString(R.string.error));
+            equipe.setError(getString(R.string.error));
         }
         if (validacao){
             startActivity(new Intent(this, TelaOpcoes2.class));
             finish();
         }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
     }
 
 

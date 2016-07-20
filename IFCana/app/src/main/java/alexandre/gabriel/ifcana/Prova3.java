@@ -3,13 +3,14 @@ package alexandre.gabriel.ifcana;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 /**
  * Created by Gabriel on 08/07/2016.
  */
-public class Prova3 extends ActionBarActivity {
+public class Prova3 extends AppCompatActivity {
 
     private Button proxima_prova3;
 
