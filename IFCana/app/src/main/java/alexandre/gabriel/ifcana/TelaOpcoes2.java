@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class TelaOpcoes2 extends AppCompatActivity {
 
-    Button pontuacao;
+    private Button pontuacao, participante;
 
 
 
@@ -24,6 +24,19 @@ public class TelaOpcoes2 extends AppCompatActivity {
 
                 Intent trocatela = new
                 Intent(TelaOpcoes2.this, Pontuacao.class);
+                TelaOpcoes2.this.startActivity(trocatela);
+                TelaOpcoes2.this.finish();
+
+
+            }
+        });
+
+        participante = (Button) findViewById(R.id.btparticipante);
+        participante.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent trocatela = new
+                Intent(TelaOpcoes2.this, Prova1.class);
                 TelaOpcoes2.this.startActivity(trocatela);
                 TelaOpcoes2.this.finish();
 
