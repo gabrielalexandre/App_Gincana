@@ -20,27 +20,20 @@ public class Cadastro extends AppCompatActivity{
 
     private Spinner spinnerEquipe;
     private EditText equipe;
-    private ImageView bt_voltar;
+    //private ImageView bt_voltar;
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
 
+        mToolbar = (Toolbar) findViewById(R.id.toolbar1);
+        mToolbar.setTitle("Cadastrar Participante");
+        mToolbar.setLogo(R.drawable.app_icon);
+
         spinnerEquipe = (Spinner) findViewById(R.id.spinequipe);
         equipe = (EditText) findViewById(R.id.nomeEquipe);
-        bt_voltar = (ImageView) findViewById(R.id.btvoltar);
-
-        bt_voltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent trocatela = new Intent(Cadastro.this, TelaOpcoes.class);
-                Cadastro.this.startActivity(trocatela);
-                Cadastro.this.finish();
-
-            }
-
-        });
         ArrayList<String> stringArrayList = new ArrayList<>();
         stringArrayList.add("Vermelha");
         stringArrayList.add("Azul");

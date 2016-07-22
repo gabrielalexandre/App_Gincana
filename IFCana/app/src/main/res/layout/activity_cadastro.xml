@@ -2,7 +2,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/gradient"
     android:layout_height="match_parent">
 
 
@@ -10,22 +9,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <include layout="@layout/toolbar_bottom"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_back_black_24dp"
-                android:id="@+id/btvoltar" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cadastrar"
-                android:textSize="30dp"
-                android:textColor="#000000"
-                android:id="@+id/textView"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -44,7 +29,6 @@
                 android:textColor="#000000"
                 android:layout_marginTop="50dp"
                 android:id="@+id/textView2"
-                android:layout_below="@+id/textView"
                 android:layout_centerHorizontal="true" />
             <EditText
                 android:layout_width="match_parent"
